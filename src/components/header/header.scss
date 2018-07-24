@@ -1,0 +1,42 @@
+.header {
+  position: relative;
+  box-shadow: 0 0 2px rgba(0,0,0,.14), 0 2px 4px rgba(0,0,0,.28);
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &.container {
+      padding: 10px 20px;
+    }
+    img {
+      display: block;
+      width: 160px;
+      height: 80px;
+    }
+    h2 {
+      margin: 0 40px;
+      font-size: 33px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+  &__nav {
+    background-color: #168de2;
+    button {
+      padding: 10px 30px;
+      color: #fff;
+      font-size: 16px;
+      border-left: 1px solid #fff;
+      background-color: transparent;
+      &:hover {
+        background-color: #1482d0;
+      }
+      &:active {
+        color: rgba(255,255,255, 0.5);
+      }
+    }
+    button:last-child {
+      border-right: 1px solid #fff;
+    }
+  }
+}
